@@ -5,6 +5,7 @@ import { CursorGlow } from "@/components/cursor-glow";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 import { Navbar } from "@/components/navbar";
 import { ScrollProgress } from "@/components/scroll-progress";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Dhacar | Full Stack Developer & Creative Technologist",
@@ -67,6 +68,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <FloatingWhatsApp />
+        <Analytics />
       </body>
     </html>
   );
